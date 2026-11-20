@@ -602,3 +602,192 @@ a.resource-card:hover {
     padding: 55px 20px;
   }
 }
+
+
+/* FINAL MOBILE POLISH */
+@media (max-width: 768px) {
+
+  .section {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .page-banner {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .page-banner h1 {
+    font-size: 2.2rem;
+  }
+
+  .intro h2,
+  .history-layout h2,
+  .narrow-content h2,
+  .resources-section h2 {
+    font-size: 1.9rem;
+    line-height: 1.25;
+  }
+
+  .intro p,
+  .history-layout p,
+  .narrow-content p,
+  .resources-section p {
+    font-size: 0.95rem;
+    line-height: 1.75;
+  }
+
+  .resource-card {
+    padding: 22px;
+  }
+
+  .resource-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .milestones {
+    padding: 45px 0;
+  }
+
+}
+
+
+/* =====================================
+   MOBILE LAYOUT FIXES
+   ===================================== */
+
+@media (max-width: 768px) {
+
+  /* HEADER */
+  .header-inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 20px;
+  }
+
+  .brand {
+    width: 100%;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .brand img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .brand span {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .site-header nav {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .site-header nav a {
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+
+  .nav-donate {
+    padding: 9px 14px;
+  }
+
+  /* HERO */
+  .hero {
+    min-height: 620px;
+    height: auto;
+    padding: 60px 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero::before {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-content {
+    padding: 30px 22px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.2rem, 9vw, 3rem);
+    line-height: 1.2;
+  }
+
+  .hero-content > p:not(.eyebrow) {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .hero-buttons .button {
+    width: 100%;
+    max-width: 290px;
+    text-align: center;
+  }
+
+  /* HOMEPAGE INTRO */
+  .intro-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .intro-grid img {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: cover;
+  }
+
+  /* MILESTONES */
+  .milestone-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  /* HISTORY */
+  .history-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .history-layout img {
+    height: auto;
+    max-height: 450px;
+  }
+
+  /* RESOURCES */
+  .resource-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* DONATION */
+  .donation-section h2 {
+    font-size: 2.2rem;
+  }
+
+  .donation-section .button {
+    max-width: 100%;
+    white-space: normal;
+  }
+
+  /* FOOTER */
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+}
